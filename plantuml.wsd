@@ -1,0 +1,7 @@
+@startuml class
+
+skin rose
+
+title Classes - Class Diagram
+
+@enduml
