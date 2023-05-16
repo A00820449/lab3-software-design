@@ -1,7 +1,17 @@
 package lab3;
 
-public interface Duck {
-    public void swim();
-    public void quack();
-    public void display();
+public abstract class Duck {
+    QuackStrategy quackS;
+    FlyStrategy flyS;
+
+    public void quack() {
+        quackS.quack();
+    }
+
+    public void fly() {
+        flyS.fly();
+    }
+
+    abstract void display();
+    abstract void swim();
 }

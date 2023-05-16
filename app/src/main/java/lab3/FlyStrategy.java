@@ -1,5 +1,5 @@
 package lab3;
 
-public class FlyStrategy {
-    
+public interface FlyStrategy {
+    public void fly();
 }
