@@ -13,6 +13,6 @@ public class RedHead extends Duck {
 
     @Override
     void swim() {
-        System.out.println("*Pato de cabeza roja nadando...*");
+        System.out.println("*Pato de cabeza roja nadando*");
     }
 }

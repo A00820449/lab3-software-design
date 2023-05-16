@@ -13,6 +13,6 @@ public class Mallard extends Duck {
 
     @Override
     void swim() {
-        System.out.println("*Pato de collar nadando...*");
+        System.out.println("*Pato de collar nadando*");
     }
 }
