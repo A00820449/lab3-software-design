@@ -4,4 +4,67 @@ skin rose
 
 title Classes - Class Diagram
 
+abstract class Duck {
+    #QuackStrategy quackS
+    #FlyStrategy flyS
+    +void quack()
+    +void fly()
+    {abstract} +void display()
+    {abstract} +void swim()
+}
+Duck ..> FlyStrategy
+Duck ..> QuackStrategy
+
+interface FlyStrategy {
+    +void fly()
+}
+
+interface QuackStrategy {
+    +void quack()
+}
+
+class Fly implements FlyStrategy {
+    +void fly()
+}
+
+class NoFly implements FlyStrategy {
+    +void fly()
+}
+
+class Quack implements QuackStrategy {
+    +void quack()
+}
+
+class NoQuack implements QuackStrategy {
+    +void quack()
+}
+
+class Squeak implements QuackStrategy {
+    +void quack()
+}
+
+class Mallard extends Duck {
+    +Mallard()
+    +display()
+    +swim()
+}
+
+class ReadHead extends Duck {
+    +ReadHead()
+    +display()
+    +swim()
+}
+
+class DecoyDuck extends Duck {
+    +DecoyDuck()
+    +display()
+    +swim()
+}
+
+class RubberDuck extends Duck {
+    +RubberDuck()
+    +display()
+    +swim()
+}
+
 @enduml

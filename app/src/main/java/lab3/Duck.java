@@ -1,8 +1,8 @@
 package lab3;
 
 public abstract class Duck {
-    QuackStrategy quackS;
-    FlyStrategy flyS;
+    protected QuackStrategy quackS;
+    protected FlyStrategy flyS;
 
     public void quack() {
         quackS.quack();
