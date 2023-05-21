@@ -13,6 +13,6 @@ public class RubberDuck extends Duck {
 
     @Override
     void swim() {
-        System.out.println("*Patito de hulo flotando*");
+        System.out.println("*Patito de hule flotando*");
     }
 }
